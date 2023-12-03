@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Understanding the Different Stages in a CPU - Learn about Fetch, Decode, Execute, and Writeback stages in a Central Processing Unit (CPU).">
+  <meta name="keywords" content="CPU stages, Fetch stage, Decode stage, Execute stage, Writeback stage, Central Processing Unit, CPU architecture">
+  <meta name="author" content="Nikhil Saurav">
+  <title>Different Stages in a CPU</title>
+</head>
+<body>
+  <h1 style="text-align: center;"><span style="color: #ff0000;">Different Stage in CPU</span></h1>
+<p style="text-align: justify;">In a CPU (Central Processing Unit), the term "stage" typically refers to the different phases or steps involved in executing instructions. These stages are part of the CPU's instruction cycle, which is the process by which a CPU retrieves, decodes, and executes instructions from a program. The main stages in the CPU's instruction cycle are commonly described as follows:</p>
+<p style="text-align: justify;"><strong>Fetch Stage:</strong>&nbsp;The CPU retrieves the next instruction from memory.</p>
+<ol style="text-align: justify;">
+<li>
+<p><strong>Program Counter (PC):</strong></p>
+<ul>
+<li><strong>Work:</strong> Holds the memory address of the next instruction to be fetched.</li>
+<li><strong>Fetch Stage:</strong> The PC provides the address to the memory to fetch the next instruction. After fetching, it increments to point to the subsequent instruction.</li>
+</ul>
+</li>
+<li>
+<p><strong>Instruction Register (IR):</strong></p>
+<ul>
+<li><strong>Work:</strong> Holds the current instruction fetched from memory.</li>
+<li><strong>Fetch Stage:</strong> Once the instruction is fetched, it's stored in the IR. This register contains the opcode and possibly operands needed for execution.</li>
+</ul>
+</li>
+</ol>
+<p style="text-align: justify;"><strong>Decode Stage:</strong>&nbsp;The CPU interprets the fetched instruction to determine the operation to be performed.</p>
+<ol style="text-align: justify;">
+<li><strong>Instruction Register (IR):</strong>
+<ul>
+<li><strong>Work:</strong> Holds the current instruction fetched from memory.</li>
+<li><strong>Decode Stage:</strong> The CPU examines the opcode and operands stored in the IR to determine the operation to be performed and what data or addresses are involved.</li>
+</ul>
+</li>
+</ol>
+<p style="text-align: justify;"><strong>Execute Stage:</strong>&nbsp;The CPU performs the actual operation specified by the instruction.</p>
+<ol style="text-align: justify;">
+<li>
+<p><strong>Accumulator (ACC):</strong></p>
+<ul>
+<li><strong>Work:</strong> Used for arithmetic and logic operations. The result of most operations is stored here.</li>
+<li><strong>Execute Stage:</strong> Holds intermediate results or final results of arithmetic or logical operations.</li>
+</ul>
+</li>
+<li>
+<p><strong>General-Purpose Registers (GPRs):</strong></p>
+<ul>
+<li><strong>Work:</strong> Versatile registers used for various purposes during computations.</li>
+<li><strong>Execute Stage:</strong> These registers might hold data, addresses, or intermediate results required for computations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Memory Address Register (MAR):</strong></p>
+<ul>
+<li><strong>Work:</strong> Holds the address of the memory location being read from or written to.</li>
+<li><strong>Execute Stage:</strong> When data is fetched or stored in memory, the MAR holds the address of the memory location involved.</li>
+</ul>
+</li>
+<li>
+<p><strong>Memory Buffer Register (MBR) or Memory Data Register (MDR):</strong></p>
+<ul>
+<li><strong>Work:</strong> Temporarily holds data fetched from or sent to memory.</li>
+<li><strong>Execute Stage:</strong> When data is fetched from memory, it's temporarily stored in the MBR/MDR before the CPU uses it for processing.</li>
+</ul>
+</li>
+</ol>
+<h3 style="text-align: justify;">Overall Functionality:</h3>
+<ul style="text-align: justify;">
+<li><strong>Fetch Stage:</strong> PC fetches the instruction, stores it in IR.</li>
+<li><strong>Decode Stage:</strong> IR is examined to understand the operation and its requirements.</li>
+<li><strong>Execute Stage:</strong> Various registers, especially ACC and GPRs, are utilized for actual computation and data manipulation. MAR and MBR/MDR assist in accessing and temporarily holding data from memory during execution.</li>
+</ul>
+<p style="text-align: justify;">Each register within the CPU has a specific role in handling data, addresses, or control information during the different stages of the instruction cycle, collectively ensuring the efficient execution of instructions by the CPU.</p>
+</body>
+</html>
